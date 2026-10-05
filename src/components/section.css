@@ -1,0 +1,14 @@
+.section {
+  background: #d8eeeb;
+  border: 1px solid #9bcfc9;
+  border-radius: 16px;
+  padding: 1.5rem;
+  color: #164f52;
+  box-shadow: 0 6px 18px rgba(22, 79, 82, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(22, 79, 82, 0.18);
+}

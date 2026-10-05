@@ -1,0 +1,123 @@
+/* Warm, food-magazine look for the whole app */
+.app {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  color: #3f2d20;
+  box-sizing: border-box;
+}
+
+/* Hero header */
+.hero {
+  background: linear-gradient(135deg, #d9480f, #f59f00);
+  color: #fff;
+  border-radius: 0 0 24px 24px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin: 0 -1.5rem 2rem;
+}
+
+.hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.75rem;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.hero p {
+  margin: 0.5rem 0 1.25rem;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.search {
+  width: min(420px, 90%);
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 12px rgba(63, 45, 32, 0.25);
+}
+
+/* Sections */
+.app section {
+  margin-bottom: 2.5rem;
+}
+
+.app section > h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.6rem;
+  color: #3f2d20;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #f3e7d3;
+}
+
+/* Card grid: 2 even columns on desktop, 1 on small screens */
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 480px) {
+  .card-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.empty-note {
+  color: #a08b76;
+  font-style: italic;
+}
+
+/* Shopping list */
+.shopping-list {
+  list-style: none;
+  padding: 0;
+  max-width: 560px;
+}
+
+.shopping-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #fffdf8;
+  border: 1px solid #f3e7d3;
+  border-radius: 12px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.shopping-list li.done span {
+  text-decoration: line-through;
+  color: #b8a68f;
+}
+
+.shopping-list input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: #d9480f;
+}
+
+.remove-btn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #c92a2a;
+}
+
+.clear-btn {
+  margin-top: 0.75rem;
+  background: #f3e7d3;
+  border: none;
+  border-radius: 999px;
+  padding: 0.65rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #3f2d20;
+}
