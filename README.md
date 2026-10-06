@@ -43,6 +43,6 @@ src/
 
 ## Screenshots
 
-! [Sear home page with recipe grid] (screenshots/home.png)
-! [Recipe detail view with ingredients] (screenshots/recipe-detail.png)
-! [Favorites and shopping list] (screenshots/shopping-list.png)
+![Sear home page with recipe grid](screenshots/home.png)
+![Recipe detail view with ingredients](screenshots/recipe-detail.png)
+![Favorites and shopping list](screenshots/shopping-list.png)
