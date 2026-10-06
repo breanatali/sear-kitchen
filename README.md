@@ -43,4 +43,6 @@ src/
 
 ## Screenshots
 
-_Add 1–2 screenshots of the app here._
+! [Sear home page with recipe grid] (screenshots/home.png)
+! [Recipe detail view with ingredients] (screenshots/recipe-detail.png)
+! [Favorites and shopping list] (screenshots/shopping-list.png)
