@@ -16,7 +16,13 @@ export function RecipeCard({ recipe, isFavorite, onToggleFavorite, onSelect }) {
       >
         {isFavorite ? "❤️" : "🤍"}
       </button>
-      <img className="recipe-img" src={recipe.image} alt={recipe.title} />
+      {recipe.image ? (
+        <img className="recipe-img" src={recipe.image} alt={recipe.title} />
+      ) : (
+        <div className="recipe-emoji" aria-hidden="true">
+          {recipe.emoji}
+        </div>
+      )}
       <h3>{recipe.title}</h3>
       <p className="recipe-desc">{recipe.description}</p>
       <p className="recipe-meta">⏱ {recipe.time} · 🍽 {recipe.servings} servings</p>

@@ -10,7 +10,13 @@ export function RecipeDetail({ recipe, isFavorite, onToggleFavorite, onAddIngred
         <button className="close-btn" onClick={onClose} aria-label="Close">
           ×
         </button>
-        <img className="detail-img" src={recipe.image} alt={recipe.title} />
+        {recipe.image ? (
+          <img className="detail-img" src={recipe.image} alt={recipe.title} />
+        ) : (
+          <div className="detail-emoji" aria-hidden="true">
+            {recipe.emoji}
+          </div>
+        )}
         <h2>{recipe.title}</h2>
         <p className="recipe-meta">
           ⏱ {recipe.time} · 🍽 Serves {recipe.servings}
